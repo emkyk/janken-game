@@ -1,0 +1,119 @@
+/* Reset CSS */
+/* リセットCSSの内容 */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: pink;
+    height: 100px;
+    padding: 0 20px;
+  }
+  
+  .header .header-inner {
+    position: relative;
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+  }
+
+  
+.header-logo1 img {
+   margin-top: 0 auto;
+   margin-left: 0 auto;
+   height: 30%;
+}
+.header-logo2 img {
+    margin-top: 0;
+    margin-left: 0 auto;
+    height: 40%;
+  }
+  
+  .header-title {
+    display: inline; /* タイトルを横並びにする */
+    margin: 0 auto;
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    /* font-size: 30px; */
+    font-family: "Arial", sans-serif; /* ゴシック体に設定 */
+
+}
+
+
+/* メインコンテンツ */
+main {
+    text-align: center;
+    margin-top: 0px; /* ヘッダーの高さ分メインコンテンツを下げる */
+}
+
+.cat-container {
+    margin-top: 0px; /* ヘッダーの高さ分のマージンを設定 */
+    width: 100%; /* 画面幅いっぱいに */
+}
+
+.cat-container img {
+    width: 100%; /* 画面幅いっぱいに表示 */
+    display: block; /* インライン要素をブロック要素に変更 */
+}
+
+.text-container {
+    position: absolute; /* 相対位置 */
+    top: 30%; /* 上から中央に */
+    left: 50%; /* 左から中央に */
+    transform: translate(-50%, -50%); /* 中央揃え */
+}
+
+.text-container p {
+    font-size: 30px;
+    color: black;
+    /* margin-bottom: 10px; マージンを追加して行間を広げる */
+}
+
+
+.selection-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.item {
+    width: 200px;
+
+}
+
+.item img {
+    width: 100%;
+}
+
+.result-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    font-size: 40px;
+}
+.result-message {
+    margin: 0 auto;
+
+}
+
+
+/* フッター */
+footer {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+#reset-button {
+    margin-top: 10px;
+}

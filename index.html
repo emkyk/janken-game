@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ねこねこじゃんけん</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>    
+
+    <!-- ヘッダー -->
+    <header class="header">
+    <div class="header-inner">
+        <h1 class="header-logo1">
+            <img src="img/kuroneko.png" alt="ロゴ１">
+        </h1>
+        <h1 class="header-title">
+            ねこねこじゃんけん(=^・^=)
+        </h1>
+        <!-- <h1 class="header-logo2">
+            <img src="img/nekonote.png" alt="ロゴ２">
+        </h1>  -->
+    </header>
+
+    
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- 黒猫の画像 -->
+        <div class="cat-container">
+            <img src="img/kuronekojannkenn.jpg" alt="黒猫のぱー">
+            <div class="text-container">
+                <p class="fade-in">じゃんけんする？(=^・^=)</p>
+                <p class="fade-in">さいしょは ぱー！</p>
+                <p class="fade-in">じゃんけん...</p>
+            </div>
+            <div class="container">
+                <p>えらんでね</p>
+                <p class="blink">↓ Select the Button below ↓</p>
+        </div>
+        
+        <!-- プレイヤーの手を選択するコンテナ -->
+        <div class="selection-container">
+            <div class="item">
+                <img src="img/zyanken_nekonogu-.png" alt="ぐー">
+                <h2>ぐー</h2>
+            </div>
+            <div class="item">
+                <img src="img/zyanken_nekonotyoki.png" alt="ちょき">
+                <h2>ちょき</h2>
+            </div>
+            <div class="item">
+                <img src="img/zyanken_nekonopa-.png" alt="ぱー">
+                <h2>ぱー</h2>
+            </div>
+        </div>
+
+        <!-- 結果表示エリア -->
+        <div class="result-container">
+            <!-- コンピュータの手 -->
+            <div class="item" id="computer-hand">
+               <p>ねこの手</p> 
+               <img src="img/kuroneko.png" alt="ねこの手">
+                
+                <p id="computer-choice-text"></p>
+            </div>
+            <!-- プレイヤーの手 -->
+            <div class="item" id="player-hand">
+                <p>あなたの手</p>
+                <img src="img/jankenkoneko.jpg" alt="あなたの手">
+                <p id="player-choice-text"></p>
+            </div>
+            <!-- じゃんけんの結果 -->
+            <div id="result-message"></div>
+                <!-- <p>結果：<span id="result-message-text"> </span></p> -->
+        </div>
+    </main>
+
+    <!-- フッダー -->
+    <footer>
+        <!-- カウンター -->
+        <div class="counter-container">
+            <div>
+                <p>勝ち: <span id="win-count">0</span></p>
+            </div>
+            <div>
+                <p>負け: <span id="lose-count">0</span></p>
+            </div>
+            <div>
+                <p>引き分け: <span id="draw-count">0</span></p>
+            </div>
+            <div>
+                <p>勝率: <span id="win-rate">0%</span></p>
+            </div>
+        </div>
+        <!-- リセットボタン -->
+        <button id="reset-button">リセット</button>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="janken.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
